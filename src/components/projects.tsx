@@ -26,7 +26,7 @@ export function Projects() {
                 title: "Portfolio",
                 description: "Portfolio is a web application that allows users to manage their service requests.",
                 language: "Next.js, Tailwind CSS",
-                github: 'https://github.com/RikkaO1/portfolio_react',
+                github: 'https://github.com/RikkaO1/portfolio_website',
                 demo: 'https://portfolio-website-ten-kappa-24.vercel.app/'
             },
             {
