@@ -23,7 +23,7 @@ export function Homepage() {
 
     return (
         <section id="home" className="h-screen flex flex-col items-center justify-center gap-2">
-            <h5 className="text-[#7CE4F0]">Hello It's Me</h5>
+            <h5 className="text-[#7CE4F0]">Hello It&apos;s Me</h5>
             <h1 className="text-3xl md:text-6xl font-bold">
                 <span className="typing-text">{typedName}</span>
                 <span className={`typing-cursor ${startTyping ? 'animate-pulse' : 'opacity-0'}`}></span>

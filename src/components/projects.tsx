@@ -3,9 +3,20 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 import { useEffect, useState } from "react"
+import Image from 'next/image';
+
+interface Project {
+    id: number;
+    title: string;
+    description: string;
+    image: string;
+    language: string;
+    github: string;
+    demo: string;
+}
 
 export function Projects() {
-    const [project, setProject] = useState<any>([])
+    const [project, setProject] = useState<Project[]>([]);
 
     useEffect(() => {
         const data = [
@@ -43,13 +54,13 @@ export function Projects() {
         <section id="projects">
             <div className="flex flex-col gap-2">
                 <h1 className="text-4xl font-bold text-center">Project Experience</h1>
-                <h3 className="text-center text-gradient">Explore the projects I've worked on so far</h3>
+                <h3 className="text-center text-gradient">Explore the projects I&apos;ve worked on so far</h3>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
-                {project?.map((item: any) => (
+                {project?.map((item: Project) => (
                     <div className="w-full" key={item.id}>
                         <div className="flex flex-col gap-2 bg-white/10 p-2 rounded-md border-[#999999] border-2">
-                            <img src={item.image} alt={item.title} className="w-full h-fit object-cover rounded-md" />
+                            <Image src={item.image} alt={item.title} className="w-full h-fit object-cover rounded-md" width={500} height={500} />
                             <h2 className="text-2xl font-bold text-center">{item.title}</h2>
                             <p className="text-sm">{item.description}</p>
                             <div className="flex justify-between">

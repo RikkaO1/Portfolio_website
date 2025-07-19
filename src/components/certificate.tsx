@@ -1,8 +1,7 @@
 "use client"
 
 import { formatDateRange } from '@/utils/formatDate';
-import { div } from 'framer-motion/client';
-
+import Image from 'next/image';
 
 export function Certificate() {
 
@@ -65,7 +64,7 @@ export function Certificate() {
                 {certificates.map((certificate) => (
                     <div key={certificate.id} className='bg-white/10 rounded-md border-[#999999] border-2 px-4 py-2 flex flex-col justify-between'>
                         <div className="flex flex-col gap-2">
-                            <img src={certificate.image} alt={certificate.title} className={`w-full h-fit mb-4 rounded-2xl`} />
+                            <Image src={certificate.image} alt={certificate.title} className={`w-full h-fit mb-4 rounded-2xl`} width={500} height={500} />
                             <h2 className="font-bold text-center">{certificate.title}</h2>
                             <p className="text-sm">{certificate.description}</p>
                         </div>

@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import Image from 'next/image';
 
 export function Skill() {
     const [activeLink, setActiveLink] = useState('techstack');
@@ -35,7 +36,9 @@ export function Skill() {
                         <ul className="tabs-menu">
                             {["HTML", "CSS", "JavaScript", "TypeScript", "PHP", "SQL", "jQuery", "Tailwind CSS", "Bootstrap", "React", "Next.js", "Flowbite", "Laravel"].map((item) => (
                                 <li key={item}>
-                                    <img
+                                    <Image
+                                        width={50}
+                                        height={50}
                                         src={`/images/logos/${item.replace(/\s+/g, '').replace(/\./g, '')}.png`}
                                         alt={item}
                                         className="w-14"
@@ -54,7 +57,9 @@ export function Skill() {
                         <ul className="tabs-menu">
                             {["XAMPP", "WinSCP", "FileZilla", "Postman", "Visual Studio Code", "Windsurf", "Git"].map((item) => (
                                 <li key={item}>
-                                    <img
+                                    <Image
+                                        width={50}
+                                        height={50}
                                         src={`/images/logos/${item.replace(/\s+/g, '').replace(/\./g, '')}.png`}
                                         alt={item}
                                         className="w-14"

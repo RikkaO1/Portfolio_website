@@ -44,8 +44,8 @@ export function Contact() {
             <div className="flex flex-col md:flex-row gap-6">
                 <div className="flex-1">
                     <h1 className="text-4xl font-bold">Contact <span className="text-main2">Me</span></h1>
-                    <h4 className="text-xl font-semibold mt-2">let's work together</h4>
-                    <h5 className="text-lg mt-5">I'm glad you've visited my personal portfolio website! If you have ant questions, suggestions, or would like to collaborate, please feel to contact me through this form. I will endeavor to reply to your message as soon as possible</h5>
+                    <h4 className="text-xl font-semibold mt-2">let&apos;s work together</h4>
+                    <h5 className="text-lg mt-5">I&apos;m glad you&apos;ve visited my personal portfolio website! If you have any questions, suggestions, or would like to collaborate, please feel free to contact me through this form. I will endeavor to reply to your message as soon as possible</h5>
                     <ul className="social flex flex-col gap-4 mt-10">
                         <li>
                             <Link target="_blank" href="https://github.com/RikkaO1" className="flex items-center gap-4">
