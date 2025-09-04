@@ -34,7 +34,7 @@ export function Skill() {
                 {content === 'techstack' && (
                     <div className="tech-stack">
                         <ul className="tabs-menu">
-                            {["HTML", "CSS", "JavaScript", "TypeScript", "PHP", "SQL", "jQuery", "Tailwind CSS", "Bootstrap", "React", "Next.js", "Flowbite", "Laravel"].map((item) => (
+                            {["HTML", "CSS", "JavaScript", "TypeScript", "PHP", "jQuery", "Tailwind CSS", "Bootstrap", "React", "Next.js", "Flowbite", "Laravel"].map((item) => (
                                 <li key={item}>
                                     <Image
                                         width={50}
